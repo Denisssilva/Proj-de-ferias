@@ -1,0 +1,28 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "api para sistema de receitas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Denisssilva/Proj-de-ferias.git"
+  },
+  "keywords": [
+    "node",
+    "rest",
+    "api",
+    "bolos"
+  ],
+  "author": "Denis Santana da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Denisssilva/Proj-de-ferias/issues"
+  },
+  "homepage": "https://github.com/Denisssilva/Proj-de-ferias#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
