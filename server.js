@@ -1,5 +1,3 @@
-const http = require('http');
-const app = require('./app');
-const port = process.env.port || 3000; 
-const server = http.createServer(app);
-server.listen(port);
+app.listen(8080, () => {
+  console.log('SERVIDOR INICIADO NA PORTA 8080: http://localhost:8080/')
+})

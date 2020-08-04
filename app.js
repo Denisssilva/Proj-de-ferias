@@ -1,10 +1,16 @@
-const express = require('express');
-const app = express();
+const express = require('express')
+const app = express()
 
-app.use((req, res, next) => {
-    res.status(200).send({
-        mensagem: 'Ok Deu certo !'
-    });
-});
+app.get('/', (req, res) => {
+  return res.sendFile(__dirname + 'PAGINA INICIAL')
+})
 
-module.exports = app;
+app.get('/caduser', (req, res) => {
+  return res.sendFile(__dirname + 'CADASTRO DE USUARIO')
+})
+
+app.get('/receitas', (req, res) => {
+  return res.send({ titulo: 'PAGINA DE RECEITAS' })
+})
+
+module.exports = app
